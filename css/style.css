@@ -1,0 +1,896 @@
+ /* 
+ font-family: 'Josefin Sans', sans-serif;
+ font-family: 'Oswald', sans-serif;
+ */
+
+
+ 
+::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #d3a13d;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #000000;
+}
+
+::selection {
+    color: #d3a13ded;
+    background: #2e2e38;
+}
+body{ 
+    background: url(../images/body_bg.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-attachment: fixed !important;
+    background-color: #000 !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    color: #042c4f !important; 
+}
+
+body a{
+	text-decoration:none;
+    cursor: pointer; 
+}
+body a:hover{
+	text-decoration:none;
+    
+}
+body ul{
+	padding:0px;
+	margin:0px;
+    list-style-type: none;
+}
+body li{
+    list-style-type: none;
+}
+.img-fluid{
+    margin: auto !important;
+}
+ 
+
+	/*==========  sidebar_bg CSS START  ========== */
+.top_bg{
+    display: none;  
+    background: #000;
+    padding: 20px 0px; 
+    position: relative;
+    z-index: 1;
+} 
+.top_bg ul li h3{
+    padding: 0px;
+    margin: 0px;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    color: #d3a13d;
+    -webkit-text-stroke: 1px #d3a13d;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+.top_bg ul li h3 span{
+    color: #d3a13d;
+    -webkit-text-stroke: 1px #d3a13d;
+    -webkit-text-fill-color: #d3a13d;
+    font-weight: 900;
+}
+.sidebar_btn {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 8px 20px;
+    margin: 0px;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #d3a13d;
+    border: none;
+    outline: none;
+    transition: 1s; 
+    float: right; 
+}
+.sidebar_btn:hover{
+    transition: 1s;
+    box-shadow: 0px 50px 0px 0px #fff inset;
+}
+.sidebar_close{
+    border: 1px dashed #d3a13d;
+    color: #d3a13d;
+    font-size: 20px;
+    display: none;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+.sidebar_close:hover{
+    transition: 1s; 
+    transform: rotate(360deg);
+}
+.sidebar_bg{ 
+    max-width: 250px;
+    padding: 15px 0px 15px 15px;
+    border-left: 1px solid #d3a13da1;
+    margin: 50px 10px 0px;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+} 
+.sidebar_bg  .user_img{ 
+    max-width: 130px;
+}
+.sidebar_bg  .hvr-bounce-to-right{
+
+}
+.inSection {
+    background: #2e2e38;
+  }
+.sidebar_bg .sidebar_icon{
+
+}
+.sidebar_bg  .sidebar_icon a{
+    text-align: center;
+    color: #d3a13d;
+    margin: 0px;
+    font-size: 16px;
+    width: 28px;
+} 
+.sidebar_bg ul{
+    display: block;
+    text-align: center;
+    border: none;
+}
+.sidebar_bg ul li {
+    display: block; 
+    margin: 10px auto;
+}
+.sidebar_bg ul li button{
+    background: transparent;
+    border: none;
+    display: block;
+    outline: none;
+    width: 100%;
+    font-weight: 500;
+    transition: 1s;
+}
+.sidebar_bg ul li button.active{
+    background: #d3a13d;
+    color: #000;
+}
+.sidebar_bg ul li button:hover{
+    transition: 1s;
+    box-shadow: 0px 60px 0px 0px #000 inset;
+    color: #fff;
+}
+
+	/*==========  banner_bg CSS START  ========== */
+ 
+.banner_bg .round1{
+    animation: rotate 10s infinite ease-in-out;
+    position: absolute;
+    left: 30%;
+    top: -60px;
+    max-width: 120px; 
+}
+.banner_bg .round2{
+    animation: rotate 10s infinite ease-in-out;
+    position: absolute;
+    left: 15%;
+    bottom: 0%;
+    max-width: 120px; 
+}
+.banner_bg .round3{
+    animation: zizo 10s infinite ease-in-out;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    max-width: 120px;
+} 
+@keyframes rotate{
+    0% {
+       transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+} 
+@keyframes zizo{
+    0% {
+       transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+} 
+
+
+
+.banner_bg{
+    background: url(../images/banner_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height:95vh;
+    align-items: center;
+}
+.banner_bg .banner_text{
+    border-left: 4px solid #d3a13d;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 20px;
+}
+.banner_bg .banner_text h3{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    color: #d3a13d;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+} 
+.banner_bg .banner_text h2{
+    padding: 0px;
+    margin: 5px 0px;
+    font-size: 70px;
+    text-transform: uppercase;
+    transition: 1s;
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    -webkit-text-stroke: 1px #a5a5a5;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+.banner_bg .banner_text h2 span{
+    color: #d3a13d;
+    -webkit-text-stroke: 1px #d3a13d;
+    -webkit-text-fill-color: #d3a13d;
+    font-weight: 900; 
+}
+.banner_bg .banner_text h2 b{
+    background: #d3a13d;
+    color: #000000;
+    -webkit-text-stroke: 1px #d3a13d;
+    -webkit-text-fill-color: #000000;
+    font-weight: 900;
+    display: block;
+    width: fit-content;
+    margin: 10px 0px 10px;
+}
+
+.head{
+    text-align: center;
+    position: relative;
+}
+.head h2{
+    padding: 0px;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #252324;
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    z-index: -1; 
+}
+.head h3{
+    padding: 28px 0px;
+    margin: 0px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #fff; 
+}
+.head h3 span{
+    color: #d3a13d;
+    border-bottom: 2px solid #d3a13d;
+    padding: 0px; 
+}
+
+.btn_bg{
+    padding: 20px 0px;
+}
+.btn_bg a{
+    
+}
+
+
+/*==========  about_bg CSS START  ========== */
+.about_bg .round1{
+    animation: rotate 10s infinite ease-in-out;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    max-width: 120px;
+}
+.about_bg .round2{
+    animation: rotate 10s infinite ease-in-out;
+    position: absolute;
+    right: 20px;
+    top: 0%; 
+}
+.about_bg .round3{
+    animation: zizo 10s infinite ease-in-out;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    max-width: 100px;
+}
+
+.about_bg{
+    position: relative;
+    padding: 50px 0px;
+}
+.about_bg .about_left{
+    
+}
+.about_bg .about_left h2{
+    padding: 0px;
+    margin: 0px;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.about_bg .about_left h2 span{
+    color: #d3a13d;
+}
+.about_bg .about_left h3{
+    padding: 10px 0px 20px;
+    margin: 0px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.about_bg .about_left h4{
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 25px;
+    text-align: justify;
+    max-width: 455px;
+}
+.about_bg .about_left h4 span{
+    color: #d3a13d; 
+}
+
+.about_bg .about_right {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px 0px 0px;
+    text-align: left; 
+    align-items: center;
+}
+.about_bg .about_right h4{
+    padding: 10px 0px;
+    margin: 15px 0px 0px;
+    font-size: 15px;
+    color: #c2c2c2;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 26px;
+    border-top: 1px solid #d3a13d;
+    border-bottom: 1px solid #d3a13d; 
+    max-width: 400px;
+}
+.about_bg .about_right h4 span{
+    color: #d3a13d;
+    display: block;
+}
+.about_bg .about_right img{
+    max-width: 180px;
+    background: #000;
+    border-radius: 50%;
+    margin: 0px 10px 0px 0px !important;
+}
+
+
+/*==========  service_bg CSS START  ========== */
+.service_bg .round1{
+    animation: rotate 10s infinite ease-in-out;
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    max-width: 120px;
+}
+.service_bg .round2{
+    animation: rotate 10s infinite ease-in-out;
+    position: absolute;
+    right: 20px;
+    top: 0%; 
+}
+.service_bg .round3{
+    animation: zizo 10s infinite ease-in-out;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    max-width: 100px;
+}
+
+
+.service_bg{
+    position: relative;
+}
+.service_bg .service1{
+    max-width: 320px; 
+    margin: 10px auto; 
+}
+.service_bg .service1 h3{
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    font-size: 18px;
+    color: #d3a13d;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.service_bg .service1 h3 img{
+    max-width: 50px;
+    margin: 0px 2px 0px 0px;  
+}
+.service_bg .service1 h4{
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: #b3acac; 
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 23px;
+}
+.service_bg .service2{
+
+
+}
+.service_bg .service2 img{
+    float: left;
+    margin: 0px 10px 0px 0px !important;
+}
+.service_bg .service2 h3{
+    margin: 0px 0px 6px 0px;
+}
+/*==========  service_bg CSS START  ========== */
+.work_bg{
+    position: relative;
+    background: url(../images/work_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0px;
+}
+.work_bg  .owl-carousel .owl-nav {
+    display: block !important;
+    position: absolute;
+    top: -45px;
+    right: 0px;
+}
+.work_bg .owl-carousel button {
+    background: #d3a13d !IMPORTANT; 
+    padding: 0!important; 
+    width: 30px;
+    height: 30px;
+    color: #000 !IMPORTANT;
+    font-size: 20px !IMPORTANT;
+    margin: 5px 10px;
+    font-weight: 700 !important; 
+}
+
+.work_bg .work1{
+    max-width: 550px;
+    margin: 35px auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}   
+
+.work_bg .work1 li{
+    max-height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+    width: 100%;
+}
+.work_bg .work1 li:nth-child(1){ 
+    transform:  translate(60px,15px) rotate(-20deg);
+}
+.work_bg .work1:hover li:nth-child(1){
+    transition: 1s;
+    transform:  translate(60px,0px) rotate(0deg);
+}
+.work_bg .work1 li:nth-child(2){
+    position: relative;
+    z-index: 1;
+}
+.work_bg .work1 li:nth-child(3){
+    transform:  translate(-60px,15px) rotate(20deg); 
+}
+.work_bg .work1:hover li:nth-child(3){
+    transition: 1s;
+    transform:  translate(-60px,0px) rotate(0deg);
+}
+.work_bg .work1 li a{
+    
+}
+.work_bg .work1 li a img{
+    
+}
+	/*==========  resume_bg CSS START  ========== */
+.resume_bg{
+
+}
+.resume_bg .resume1{
+    max-width: 450px;
+    margin: 10px auto;
+    background: #000;
+    padding: 20px;
+    border: 1px solid #d3a13d33;
+    position: relative;
+    overflow: hidden;
+}
+.resume_bg .resume1 .round1{
+    top: -50px;
+    left: 0;
+    right: -63px;
+}
+.resume_bg .resume1 .round2{
+    max-width: 120px;
+    top: 0;
+    right: -35px;
+}  
+.resume_bg .resume1 .round4{
+    animation: rotate  10s infinite ease-in-out;
+    position: absolute;
+    left: 117px;
+    bottom: -78px;
+    max-width: 120px;   
+}
+
+.resume_bg .resume1 h3{
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.resume_bg .resume1 h3 i{
+    float: right;
+    color: #d3a13d;
+}
+.resume_bg .resume1 h4{
+    padding: 10px 0px;
+    margin: 10px 0px;
+    font-size: 19px;
+    color: #d3a13d;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    border-top: 1px solid #d3a13d57;
+    border-bottom: 1px solid #d3a13d57;
+}
+.resume_bg .resume1 h4 span{
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+}
+.resume_bg .resume1 h6{
+    padding: 3px 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: #c1c0c0;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 23px;
+} 
+.resume_bg .resume1 h6 img{
+    width: 20px;
+} 
+.resume_bg .resume2 h6 span{
+    float: right;
+    color: #d3a13d;
+    font-weight: 700;
+    width: 70%;
+}
+.resume_bg .resume2 h6 span img{
+    max-width: 170px;
+    float: right;
+    margin: 5px 0px 0px;
+    width: unset;
+}
+
+.resume_bg .resume1 li{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+.resume_bg .resume1 .resume1_btn{
+    text-align: right;
+    padding: 20px 0px 0px;
+
+}
+.resume_bg .resume1 .resume1_btn a{ 
+    font-size: 15px;
+    padding: 9px 10px 4px;
+    text-align: center;
+    margin: 10px auto 20px;
+} 
+
+	/*==========  footer_bg CSS START  ========== */
+.footer_bg{
+    background: #000;
+    padding: 20px 0px 10px;
+} 
+.footer_bg h5{
+    padding: 0px 0px 0px 30px;
+    font-size: 16px;
+    color: #fff; 
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    width: fit-content;
+    margin: 10px 0px;
+}
+.footer_bg h5 i{
+    color: #d3a13d;
+    font-size: 23px;
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    top: -6px;
+}
+ 
+.logo_bg{
+
+}
+.logo_bg .logo1{ 
+    max-width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+ .video{
+    max-width: unset; 
+}
+.logo_bg .logo1 .logo_img_bg{
+    max-height: 144px;
+    overflow: hidden;
+}
+.logo_bg .logo1 .logo_img_bg img{
+    
+}
+.logo_bg .logo1 .logo_details{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    padding: 50px 0px 0px;
+    background: #000000b5;
+    transition: 1s;
+    transform: scale(0.6);
+    opacity: 0;
+}
+.logo_bg .logo1:hover .logo_details{
+    transition: 1s;
+    transform: scale(1);
+    opacity: 1;
+}
+.logo_bg .logo1 .logo_details h2{
+    padding: 0px;
+    margin: 0px 0px 10px;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;  
+}
+.logo_bg .logo1 .logo_details a{
+    color: #d3a13d;
+    font-size: 32px;
+    transition: 1s; 
+}
+	/*==========  package_bg CSS START  ========== */
+ 
+
+@media only screen and (min-width:991px) and (max-width:1600px) {
+.container  { 
+    max-width:1000px !important; 
+}
+}
+
+@media only screen and (max-width:1200px) {
+.top_bg{
+    display: flex; 
+} 
+.top_bg ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 49%;
+}
+.sidebar_bg {
+    display: none;
+    max-width: 100%; 
+    margin: auto; 
+    left: 0;
+    right: 0;
+    background-color: #000;
+    width: 100%;
+    top: 0%;
+    background-image: url(../images/body_bg.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+}
+.sidebar_bg .hvr-bounce-to-right {
+    width: 120px;
+    margin: 3px auto;
+}
+.sidebar_close{
+    display: block; 
+}
+}
+
+@media only screen and (max-width:991px) {
+.container  { 
+    max-width:95% !important; 
+}
+
+.about_bg,.about_bg .about_left h4,.service_bg,.work_bg,.footer_bg{ 
+    text-align: center;
+}
+.about_bg .about_left h4,.about_bg .about_right h4 { 
+    max-width: unset;
+}
+.resume_bg {
+    text-align: left;
+}
+}
+
+@media only screen and (max-width:576px) {
+.sidebar_btn { 
+    padding: 6px 15px; 
+    font-size: 13px; 
+    float: none;
+    margin: 15px 0px 0px;
+} 
+.top_bg {
+    background: url(../images/banner_bg.html);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25px 0px;
+}
+.top_bg ul li {
+    display: block;
+    width: unset;
+} 
+.banner_bg .round2 { 
+    right: 30px;
+    bottom: 37%; 
+    left: unset;
+}
+.banner_bg { 
+    min-height: unset;
+    padding: 40px 0px; 
+}
+.banner_bg .banner_text { 
+    margin: 0px;
+}
+.banner_bg .banner_text h2 {
+    font-size: 35px;
+}
+.head h2 { 
+    font-size: 55px; 
+}
+.head h3 {
+    padding: 22px 0px; 
+    font-size: 25px; 
+}
+.about_bg{
+    padding: 40px 0px; 
+}
+.about_bg .about_left h2 {
+    font-size: 20px;
+}
+.about_bg .about_right {
+    display: block; 
+    padding: 15px 0px 0px;
+    text-align: center;
+}
+.about_bg .about_right img { 
+     margin: auto !important;  
+}
+.about_bg .about_left h4{
+    text-align: justify !important;
+}
+.service_popup h3 { 
+    font-size: 10px; 
+    margin: 10px 5px;
+    min-width: unset;
+}
+.service_popup h3 img {
+    width: 20px;
+}
+.service_bg .service1{
+    text-align: start;
+}
+.service_bg .service1 h3{
+    display: inline-flex;
+    text-align: start;
+}
+.service_bg .service1 h3 img{
+    max-width: 45px;
+}
+.service_bg .service1 h4{
+    text-align: justify;
+}
+.service_bg .service2 h3{
+    display: unset;
+}
+.work_bg {
+    padding: 10px 0px;
+    margin: 15px 0px;
+}
+.work_bg .work1 { 
+    width: fit-content;
+}
+.work_bg .work1 li {
+    max-height: 125px; 
+    max-width: 118px;
+}
+.work_bg .owl-carousel .owl-nav {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+    top: -10px;
+}
+.resume_bg .resume1 {
+    padding: 10px;
+}
+.resume_bg .resume2 h6 span { 
+    width: 60%;
+}
+.resume_bg .resume2 h6 span img {
+    max-width: 65px; 
+}
+.resume_bg .resume1 li { 
+    width: 48%;
+}
+.resume_bg .resume1 .resume1_btn a {
+    font-size: 10px;
+    padding: 9px 10px 4px; 
+}
+.round2{
+    display: none;
+}
+}
