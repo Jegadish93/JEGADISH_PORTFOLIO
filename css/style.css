@@ -611,6 +611,7 @@ body li{
 } 
 .resume_bg .resume1 h6 img{
     width: 20px;
+    margin: -4px 6px 0px 0px;
 } 
 .resume_bg .resume2 h6 span{
     float: right;
